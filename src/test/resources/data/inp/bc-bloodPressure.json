@@ -1,0 +1,51 @@
+{
+  "@graph" : [ {
+    "@graph" : [
+      {
+        "@id" : "InterIoTMsg:meta308c3987-b69e-4672-890b-3f3d6229596d",
+        "@type" : [ "InterIoTMsg:meta", "InterIoTMsg:Thing_Update" ],
+        "InterIoTMsg:conversationID" : "conv85e0f5d2-cf65-4d23-84b1-ff1381ae01fc",
+        "InterIoTMsg:dateTimeStamp" : "2017-05-08T13:48:19.428+02:00",
+        "InterIoTMsg:messageID" : "msg204d0405-a6da-4054-a6db-96d20c413746"
+      }
+    ],
+    "@id" : "InterIoTMsg:metadata"
+  }, {
+    "@graph": [
+      {
+        "@id": "_:ub22bL2C11",
+        "@type": "bc:BodyCloudAttributes",
+        "bc:hasDiastolic": {
+          "@type": "xsd:int",
+          "@value": "80"
+        },
+        "bc:hasSystolic": {
+          "@type": "xsd:int",
+          "@value": "120"
+        }
+      },
+      {
+        "@id": "_:ub22bL0C1",
+        "@type": "bc:BodyCloudObject",
+        "bc:hasData": {
+          "@id": "_:ub22bL2C11"
+        },
+        "bc:hasDeviceId": "http://inter-iot.eu/bodycloud/5C_31_3E_00_57_CA",
+        "bc:hasTimestamp": "1504080000",
+        "bc:hasTypeMessage": "blood_pressure",
+        "bc:hasUserId": "http://inter-iot.eu/bodycloud/001EXP"
+      }
+    ],
+    "@id" : "InterIoTMsg:payload"
+  } ],
+  "@context" : {
+    "InterIoTMsg" : "http://inter-iot.eu/message/",
+    "InterIoT" : "http://inter-iot.eu/",
+    "InterIoTInst" : "http://inter-iot.eu/inst/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "bc": "http://inter-iot.eu/syntax/BodyCloud#"
+  }
+}

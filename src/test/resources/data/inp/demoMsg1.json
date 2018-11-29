@@ -1,0 +1,72 @@
+{
+  "@graph" : [ {
+    "@graph" : [
+      {
+        "@id" : "InterIoTMsg:meta308c3987-b69e-4672-890b-3f3d6229596d",
+        "@type" : [ "InterIoTMsg:meta", "InterIoTMsg:Thing_Update" ],
+        "InterIoTMsg:conversationID" : "conv85e0f5d2-cf65-4d23-84b1-ff1381ae01fc",
+        "InterIoTMsg:dateTimeStamp" : "2017-05-08T13:48:19.428+02:00",
+        "InterIoTMsg:messageID" : "msg204d0405-a6da-4054-a6db-96d20c413746"
+      }
+    ],
+    "@id" : "InterIoTMsg:metadata"
+  }, {
+    "@graph": [
+      {
+        "@id": "p1ont:PositionSensorOutput_1",
+        "@type": "p1ont:PositionSensorOutput",
+        "ssn:hasValue": {
+          "@id": "p1ont:PositionMeasurementValue"
+        },
+        "ssn:isProducedBy": {
+          "@id": "p1ont:Sensor_1"
+        }
+      },
+      {
+        "@id": "p1ont:Observation_1",
+        "@type": "p1ont:PositionObservation",
+        "ssn:featureOfInterest": {
+          "@id": "p1ont:Truck_1"
+        },
+        "ssn:observationResult": {
+          "@id": "p1ont:PositionSensorOutput_1"
+        },
+        "ssn:observationResultTime": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value" : "2017-05-08T13:48:18"
+        },
+        "ssn:observedBy": {
+          "@id": "p1ont:Sensor_1"
+        }
+      },
+      {
+        "@id": "p1ont:PositionMeasurementValue",
+        "@type": [
+          "ssn:ObservationValue",
+          "geo:Point"
+        ],
+        "geo:lat": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#float",
+          "@value" : "52.3"
+        },
+        "geo:long": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#float",
+          "@value" : "98.2"
+        }
+      }
+    ],
+    "@id" : "InterIoTMsg:payload"
+  } ],
+  "@context" : {
+    "InterIoTMsg" : "http://inter-iot.eu/message/",
+    "InterIoT" : "http://inter-iot.eu/",
+    "InterIoTInst" : "http://inter-iot.eu/instance/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "p1ont": "http://platform1.eu/sensors#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ssn": "http://purl.oclc.org/NET/ssnx/ssn#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}

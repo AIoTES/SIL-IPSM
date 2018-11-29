@@ -1,0 +1,78 @@
+INTER-IoT Interoperability of Heterogeneous IoT Platforms
+Inter-Platform Semantic Mediator (IPSM)
+
+This project has received funding from the European Union's Horizon 2020
+research and innovation programme under grant agreement No 687283.
+
+Copyright 2016-2018 Universitat Politècnica de València
+
+Copyright 2016-2018 Università della Calabria
+
+Copyright 2016-2018 Prodevelop, SL
+
+Copyright 2016-2018 Technische Universiteit Eindhoven
+
+Copyright 2016-2018 Fundación de la Comunidad Valenciana para la
+Investigación, Promoción y Estudios Comerciales de Valenciaport
+
+Copyright 2016-2018 Rinicom Ltd
+
+Copyright 2016-2018 Association pour le développement de la formation
+professionnelle dans le transport
+
+Copyright 2016-2018 Noatum Ports Valenciana, S.A.U.
+
+Copyright 2016-2018 XLAB razvoj programske opreme in svetovanje d.o.o.
+
+Copyright 2016-2018 Systems Research Institute Polish Academy of Sciences
+
+Copyright 2016-2018 Azienda Sanitaria Locale TO5
+
+Copyright 2016-2018 Alessandro Bassi Consulting SARL
+
+Copyright 2016-2018 Neways Technologies B.V.
+
+I. Included Software
+
+ - Swagger-UI (https://github.com/swagger-api/swagger-ui), Copyright 2018 SmartBear Software
+
+II. Used Software
+
+ - Akka (https://akka.io/)
+   Copyright 2011-2018 Lightbend, Inc.
+ - akka-http-cors (https://github.com/lomigmegard/akka-http-cors)
+ - Apache Commons IO (https://commons.apache.org/proper/commons-io/)
+   Copyright 2011–2018 The Apache Software Foundation
+ - Apache Kafka (https://github.com/apache/kafka)
+   Copyright 2011–2018 The Apache Software Foundation
+ - Apache Jena (https://jena.apache.org/)
+   Copyright 2011–2018 The Apache Software Foundation
+ - dom4j (https://dom4j.github.io/)
+ - JSOLD-Java (https://github.com/jsonld-java/jsonld-java),
+   Copyright (c) 2012, Deutsche Forschungszentrum für Künstliche Intelligenz GmbH
+   Copyright (c) 2012-2017, JSONLD-Java contributors
+ - Lightbend Config (https://github.com/lightbend/config)
+   Copyright 2011-2018 Lightbend, Inc.
+ - Logback Classic (https://github.com/qos-ch/logback)
+   Copyright 1999-2015 QOS.ch
+ - Scala-Logging (https://github.com/lightbend/scala-logging)
+ - ScalaTest (https://github.com/scalatest/scalatest)
+ - Scallop (https://github.com/scallop/scallop)
+   Copyright 2012 Platon Pronko and Chris Hodapp
+ - SLF4J-API (https://www.slf4j.org/)
+   Copyright 2007-2017 QOS.ch
+ - Slick (http://slick.lightbend.com/)
+   Copyright 2011-2018 Lightbend, Inc.
+ - Spray-JSON (https://github.com/spray/spray-json)
+ - SQLite JDBC (https://bitbucket.org/xerial/sqlite-jdbc)
+ - TopBraid Shacl (https://github.com/TopQuadrant/shacl)
+   Copyright 2015-2018 TopQuadrant, Inc.
+
+III. License Summary
+
+ - Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
+ - BSD 2-Clause (http://opensource.org/licenses/BSD-2-Clause)
+ - BSD 3-Clause (http://opensource.org/licenses/BSD-3-Clause)
+ - MIT License (http://www.opensource.org/licenses/mit-license.php)
+ - Eclipse Public License 1.0 (http://opensource.org/licenses/EPL-1.0)
+ - CC0 1.0 Universal (CC0 1.0) Public Domain Dedication (https://creativecommons.org/publicdomain/zero/1.0/)

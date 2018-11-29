@@ -1,0 +1,64 @@
+{
+  "@graph" : [ {
+    "@graph" : [
+      {
+        "@id" : "InterIoTMsg:meta308c3987-b69e-4672-890b-3f3d6229596e",
+        "@type" : [ "InterIoTMsg:meta", "InterIoTMsg:Thing_Update" ],
+        "InterIoTMsg:conversationID" : "conv85e0f5d2-cf65-4d23-84b1-ff1381ae01fd",
+        "InterIoTMsg:dateTimeStamp" : "2017-05-08T13:48:20.428+02:00",
+        "InterIoTMsg:messageID" : "msg204d0405-a6da-4054-a6db-96d20c413747"
+      }
+    ],
+    "@id" : "InterIoTMsg:metadata"
+  }, {
+    "@graph": [
+      {
+        "@id": "p1ont:PositionMeasurementValue",
+        "@type": ["sosa:Result", "geosparql:Geometry"],
+        "geosparql:asWKT": {
+          "@type" : "http://www.opengis.net/def/sf/wktLiteral",
+          "@value" : "Point(52.3 98.2)"
+        }
+      },
+      {
+        "@id": "InterIoTInst:Position_1",
+        "@type": "p3ont:TruckPosition"
+      },
+      {
+        "@id": "p1ont:Observation_1",
+        "@type": "sosa:Observation",
+        "sosa:hasFeatureOfInterest": {
+          "@id": "p1ont:Truck_1"
+        },
+        "sosa:hasResult": {
+          "@id": "p1ont:PositionMeasurementValue"
+        },
+        "sosa:resultTime": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value" : "2017-05-08T13:48:18"
+        },
+        "sosa:madeBySensor": {
+          "@id": "p1ont:Sensor_1"
+        },
+        "sosa:observedProperty": {
+          "@id": "InterIoTInst:Position_1"
+        }
+      }
+    ],
+    "@id" : "InterIoTMsg:payload"
+  } ],
+  "@context" : {
+    "InterIoT" : "http://inter-iot.eu/",
+    "InterIoTMsg" : "http://inter-iot.eu/message/",
+    "InterIoTInst": "http://inter-iot.eu/instance/",
+    "geo-sf": "http://www.opengis.net/def/sf/",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "p1ont": "http://platform1.eu/sensors#",
+    "p3ont": "http://platform6.eu/sensors#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sosa": "http://www.w3.org/ns/sosa",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}

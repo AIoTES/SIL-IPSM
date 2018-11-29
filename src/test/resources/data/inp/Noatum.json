@@ -1,0 +1,128 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "InterIoTMsg:meta66b05c61-d687-45a3-b5fb-6864bbec3b69",
+          "@type": [
+            "InterIoTMsg:Platform_register",
+            "InterIoTMsg:meta"
+          ],
+          "InterIoTMsg:conversationID": "conv99528eba-eb2d-47e8-9ee6-9dd40d19f89a",
+          "InterIoTMsg:dateTimeStamp": "2017-05-22T22:19:30.281+02:00",
+          "InterIoTMsg:messageID": "msg7e484a2c-f959-486e-8da0-31143f457234"
+        }
+      ],
+      "@id": "InterIoTMsg:metadata"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "_:ub257bL0C1",
+          "@type": "http://inter-iot.eu/syntax/SEAMS2#SEAMSObject",
+          "http://inter-iot.eu/syntax/SEAMS2#hasAttributes": {
+            "@id": "_:ub257bL2C11"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasId": {
+            "@type": "xsd:long",
+            "@value": "10"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasMsgTimestamp": "06/09/2017 22:00:01",
+          "http://inter-iot.eu/syntax/SEAMS2#hasName": "TT0039",
+          "http://inter-iot.eu/syntax/SEAMS2#hasType": "null",
+          "http://inter-iot.eu/syntax/SEAMS2#hasVersion": "1.0"
+        },
+        {
+          "@id": "_:ub257bL2C11",
+          "@type": "http://inter-iot.eu/syntax/SEAMS2#SEAMSAttributes",
+          "http://inter-iot.eu/syntax/SEAMS2#hasAlarm": true,
+          "http://inter-iot.eu/syntax/SEAMS2#hasDist": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasDrOn": true,
+          "http://inter-iot.eu/syntax/SEAMS2#hasFRate": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGps": {
+            "@type": "xsd:int",
+            "@value": "8"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsDU": {
+            "@type": "xsd:int",
+            "@value": "4"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsHDOP": {
+            "@type": "xsd:float",
+            "@value": "1.0653533"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsR": {
+            "@type": "xsd:float",
+            "@value": "295.39"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsSQ": {
+            "@type": "xsd:int",
+            "@value": "2"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsV": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsX": {
+            "@type": "xsd:float",
+            "@value": "39.43178"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasGpsY": {
+            "@type": "xsd:float",
+            "@value": "-0.32709166"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasNmov": true,
+          "http://inter-iot.eu/syntax/SEAMS2#hasOff": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasOn": true,
+          "http://inter-iot.eu/syntax/SEAMS2#hasPPos1": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasPPos2": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasPlcOn": true,
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva1": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva10": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva11": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva12": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva2": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva4": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva5": {
+            "@type": "xsd:int",
+            "@value": "0"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva6": {
+            "@type": "xsd:int",
+            "@value": "2"
+          },
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva7": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva8": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasReserva9": false,
+          "http://inter-iot.eu/syntax/SEAMS2#hasWHours": {
+            "@type": "xsd:int",
+            "@value": "50559"
+          }
+        }
+      ],
+      "@id": "InterIoTMsg:payload"
+    }
+  ],
+  "@context": {
+    "InterIoTMsg": "http://inter-iot.eu/message/",
+    "InterIoT": "http://inter-iot.eu/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}

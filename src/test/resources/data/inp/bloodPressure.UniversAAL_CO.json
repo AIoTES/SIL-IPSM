@@ -1,0 +1,106 @@
+{
+  "@graph" : [ {
+    "@graph" : [ {
+      "@id" : "InterIoTMsg:meta308c3987-b69e-4672-890b-3f3d6229596d",
+      "@type" : [ "InterIoTMsg:Thing_Update", "InterIoTMsg:meta" ],
+      "InterIoTMsg:conversationID" : "conv85e0f5d2-cf65-4d23-84b1-ff1381ae01fc",
+      "InterIoTMsg:dateTimeStamp" : "2017-05-08T13:48:19.428+02:00",
+      "InterIoTMsg:messageID" : "msg204d0405-a6da-4054-a6db-96d20c413746"
+    } ],
+    "@id" : "InterIoTMsg:metadata"
+  }, {
+    "@graph" : [ {
+      "@id" : "_:b0",
+      "@type" : "ns1:ContextEventPattern",
+      "rdfs:subClassOf" : {
+        "@id" : "_:b1"
+      }
+    }, {
+      "@id" : "_:b1",
+      "@type" : "owl:Restriction",
+      "owl:allValuesFrom" : {
+        "@id" : "http://ontology.universAAL.org/PersonalHealthDevice.owl#BloodPressureSensor"
+      },
+      "owl:onProperty" : {
+        "@id" : "rdf:subject"
+      }
+    }, {
+      "@id" : "_:b2",
+      "@type" : "http://www.w3.org/2006/time#TimePosition",
+      "http://www.w3.org/2006/time#numericPosition" : {
+        "@type" : "xsd:decimal",
+        "@value" : "1418143637251"
+      }
+    }, {
+      "@id" : "_:b3",
+      "@type" : "http://www.w3.org/2006/time#Instant",
+      "http://www.w3.org/2006/time#inTimePosition" : {
+        "@id" : "_:b2"
+      }
+    }, {
+      "@id" : "ns1:gauge",
+      "@type" : "ns1:ContextProviderType"
+    }, {
+      "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#bp",
+      "@type" : "ns3:HealthMeasurement"
+    }, {
+      "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#bps",
+      "@type" : [ "http://www.w3.org/ns/sosa/Sensor", "http://purl.oclc.org/NET/ssnx/ssn#Device", "http://ontology.universAAL.org/PersonalHealthDevice.owl#BloodPressureSensor" ],
+      "http://www.w3.org/ns/sosa/isHostedBy" : {
+        "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#pub"
+      }
+    }, {
+      "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#dias",
+      "@type" : [ "http://www.w3.org/ns/sosa/Result", "InterIoT:medex#DiastolicBloodPressure", "ns2:Measurement" ],
+      "InterIoT:GOIoTP#hasValue" : {
+        "@type" : "xsd:float",
+        "@value" : "11.1"
+      }
+    }, {
+      "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#pub",
+      "@type" : [ "http://www.w3.org/ns/sosa/Platform", "InterIoT:medex#Gauge" ],
+      "ns1:hasType" : {
+        "@id" : "ns1:gauge"
+      },
+      "ns1:myClassesOfEvents" : {
+        "@id" : "_:b0"
+      }
+    }, {
+      "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#sys",
+      "@type" : [ "http://www.w3.org/ns/sosa/Result", "InterIoT:medex#SystolicBloodPressure", "ns2:Measurement" ],
+      "InterIoT:GOIoTP#hasValue" : {
+        "@type" : "xsd:float",
+        "@value" : "22.2"
+      }
+    }, {
+      "@id" : "urn:org.universAAL.middleware.context.rdf:ContextEvent#_:9e2aa729ac420ba3:171d",
+      "@type" : "http://www.w3.org/ns/sosa/Observation",
+      "http://www.w3.org/ns/sosa/hasResult" : [ {
+        "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#dias"
+      }, {
+        "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#sys"
+      } ],
+      "http://www.w3.org/ns/sosa/madeBySensor" : {
+        "@id" : "http://ontology.universAAL.org/SimpleHealthclient.owl#bps"
+      },
+      "http://www.w3.org/ns/sosa/phenomenonTime" : {
+        "@id" : "_:b3"
+      }
+    } ],
+    "@id" : "InterIoTMsg:payload"
+  } ],
+  "@context" : {
+    "ns" : "http://ontology.universaal.org/PhThing.owl#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "InterIoTMsg" : "http://inter-iot.eu/message/",
+    "InterIoTInst" : "http://inter-iot.eu/inst/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "InterIoT" : "http://inter-iot.eu/",
+    "ns2" : "http://ontology.universaal.org/Measurement.owl#",
+    "ns1" : "http://ontology.universAAL.org/Context.owl#",
+    "ns4" : "http://ontology.universAAL.org/Device.owl#",
+    "ns3" : "http://ontology.universaal.org/HealthMeasurement.owl#"
+  }
+}

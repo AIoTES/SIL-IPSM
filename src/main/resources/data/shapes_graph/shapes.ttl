@@ -1,0 +1,92 @@
+@prefix sripas: <http://www.inter-iot.eu/sripas#> .
+@prefix sripas_sh: <http://www.inter-iot.eu/sripas/shapes#> .
+@prefix align: <http://knowledgeweb.semanticweb.org/heterogeneity/alignment#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix exmo: <http://exmo.inrialpes.fr/align/ext/1.0/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix iiot: <http://inter-iot.eu/GOIoTP#> .
+
+sripas_sh:AlignmntShape
+	a sh:NodeShape ;
+        sh:targetClass align:Alignment ;
+	sh:property [
+		sh:path dc:title ;
+		sh:maxCount 1 ;
+        sh:minCount 1 ;
+	] ;
+	sh:property [
+        sh:path dc:creator ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dc:description ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+	sh:property [
+     	sh:path exmo:version ;
+     	sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path align:onto1 ;
+        sh:class align:Ontology;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path align:onto2 ;
+        sh:class align:Ontology;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path sripas:steps ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path sripas:cellFormat ;
+        sh:class iiot:DataFormat;
+        sh:maxCount 1 ;
+        sh:minCount 0 ;
+    ] ;
+    sh:property [
+        sh:path align:map ;
+        sh:minCount 1 ;
+        sh:class align:Cell ;
+    ] .
+
+sripas_sh:CellShape
+	a sh:NodeShape ;
+        sh:targetClass align:Cell ;
+	sh:property [
+		sh:path align:entity1 ;
+		sh:maxCount 1 ;
+        sh:minCount 1 ;
+	] ;
+	sh:property [
+    		sh:path align:entity2 ;
+    		sh:maxCount 1 ;
+            sh:minCount 1 ;
+    	] ;
+    sh:property [
+        		sh:path sripas:transformations ;
+        		sh:maxCount 1 ;
+                sh:minCount 0 ;
+        	];
+    sh:property [
+        		sh:path sripas:filters ;
+        		sh:maxCount 1 ;
+                sh:minCount 0 ;
+        	];
+    sh:property [
+        		sh:path sripas:typings ;
+        		sh:maxCount 1 ;
+                sh:minCount 0 ;
+        	].

@@ -1,0 +1,98 @@
+{
+  "@graph" : [ {
+    "@graph" : [
+      {
+        "@id" : "InterIoTMsg:meta308c3987-b69e-4672-890b-3f3d6229596d",
+        "@type" : [ "InterIoTMsg:meta", "InterIoTMsg:Thing_Update" ],
+        "InterIoTMsg:conversationID" : "conv85e0f5d2-cf65-4d23-84b1-ff1381ae01fc",
+        "InterIoTMsg:dateTimeStamp" : "2017-05-08T13:48:19.428+02:00",
+        "InterIoTMsg:messageID" : "msg204d0405-a6da-4054-a6db-96d20c413746"
+      }
+    ],
+    "@id" : "InterIoTMsg:metadata"
+  }, {
+    "@graph": [
+      {
+        "@id": "p1ont:PositionMeasurementValue",
+        "@type": "geo:Point",
+        "geo:lat": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#float",
+          "@value" : "52.3"
+        },
+        "geo:long": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#float",
+          "@value" : "98.2"
+        }
+      },
+      {
+        "@id": "p1ont:Sensor_1",
+        "@type": "saref:Sensor",
+        "saref:IsUsedFor": {
+          "@id": "InterIoTInst:Position_1"
+        },
+        "saref:hasFunction": {
+          "@id": "InterIoTInst:SensingFunction_1"
+        },
+        "saref:makesMeasurement": {
+          "@id": "InterIoTInst:Measurement_1"
+        },
+        "ssn:featureOfInterest": {
+          "@id": "p1ont:Truck_1"
+        }
+      },
+      {
+        "@id": "InterIoTInst:Measurement_1",
+        "@type": "saref:Measurement",
+        "saref:hasTimestamp": {
+          "@id": "InterIoTInst:Time_1"
+        },
+        "saref:hasValue": {
+          "@id": "p1ont:PositionMeasurementValue"
+        },
+        "saref:relatesToProperty": {
+          "@id": "InterIoTInst:PositionProperty_1"
+        }
+      },
+      {
+        "@id": "InterIoTInst:Time_1",
+        "@type": "time:Instant",
+        "time:inXSDDateTime": {
+          "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+          "@value" : "2017-05-08T13:48:18"
+        }
+      },
+      {
+        "@id": "InterIoTInst:Position_1",
+        "@type": "saref-ps:Position"
+      },
+      {
+        "@id": "InterIoTInst:PositionProperty_1",
+        "@type": "saref-ps:PositionProperty"
+      },
+      {
+        "@id": "InterIoTInst:Sensor_1",
+        "@type": "saref:Sensor"
+      },
+      {
+        "@id": "InterIoTInst:SensingFunction_1",
+        "@type": "saref:SensingFunction"
+      }
+    ],
+    "@id" : "InterIoTMsg:payload"
+  } ],
+  "@context" : {
+    "InterIoT" : "http://inter-iot.eu/",
+    "InterIoTMsg" : "http://inter-iot.eu/message/",
+    "InterIoTInst": "http://inter-iot.eu/instance/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "p1ont": "http://platform1.eu/sensors#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "saref": "https://w3id.org/saref#",
+    "saref-ps": "http://ontology.tno.nl/saref/positionsensor#",
+    "ssn": "http://purl.oclc.org/NET/ssnx/ssn#",
+    "time": "http://www.w3.org/2006/time#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}

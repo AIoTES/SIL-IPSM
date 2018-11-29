@@ -1,0 +1,82 @@
+{
+  "@graph" : [ {
+    "@graph" : [ {
+      "@id" : "InterIoTMsg:meta308c3987-b69e-4672-890b-3f3d6229596d",
+      "@type" : [ "InterIoTMsg:meta", "InterIoTMsg:Thing_Update" ],
+      "InterIoTMsg:conversationID" : "conv85e0f5d2-cf65-4d23-84b1-ff1381ae01fc",
+      "InterIoTMsg:dateTimeStamp" : "2017-05-08T13:48:19.428+02:00",
+      "InterIoTMsg:messageID" : "msg204d0405-a6da-4054-a6db-96d20c413746"
+    } ],
+    "@id" : "InterIoTMsg:metadata"
+  }, {
+    "@graph" : [ {
+      "@id" : "_:b0",
+      "@type" : "InterIoT:central#Position"
+    }, {
+      "@id" : "_:b1",
+      "@type" : "https://w3id.org/saref#SensingFunction"
+    }, {
+      "@id" : "_:b3",
+      "@type" : "http://ontology.tno.nl/saref/positionsensor#Position"
+    }, {
+      "@id" : "p1ont:Observation_1",
+      "@type" : "https://w3id.org/saref#Measurement",
+      "https://w3id.org/saref#hasTimestamp" : {
+        "@id" : "_:b6"
+      },
+      "https://w3id.org/saref#hasValue" : {
+        "@id" : "p1ont:PositionMeasurementValue"
+      },
+      "https://w3id.org/saref#relatesToProperty" : {
+        "@id" : "_:b5"
+      }
+    }, {
+      "@id" : "_:b5",
+      "@type" : "http://ontology.tno.nl/saref/positionsensor#PositionProperty"
+    }, {
+      "@id" : "_:b6",
+      "@type" : "http://www.w3.org/2006/time#Instant",
+      "http://www.w3.org/2006/time#inXSDDateTime" : {
+        "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value" : "2017-05-08T13:48:18"
+      }
+    }, {
+      "@id" : "p1ont:PositionMeasurementValue",
+      "@type" : "geo:Point",
+      "geo:lat": {
+        "@type" : "http://www.w3.org/2001/XMLSchema#float",
+        "@value" : "52.3"
+      },
+      "geo:long": {
+        "@type" : "http://www.w3.org/2001/XMLSchema#float",
+        "@value" : "98.2"
+      }
+    }, {
+      "@id" : "p1ont:Sensor_1",
+      "@type" : "https://w3id.org/saref#Sensor",
+      "https://w3id.org/saref#hasFunction" : {
+        "@id" : "_:b1"
+      },
+      "https://w3id.org/saref#isUsedFor" : {
+        "@id" : "_:b3"
+      },
+      "https://w3id.org/saref#makesMeasurement" : {
+        "@id" : "p1ont:Observation_1"
+      }
+    } ],
+    "@id" : "InterIoTMsg:payload"
+  } ],
+  "@context" : {
+    "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "InterIoTMsg" : "http://inter-iot.eu/message/",
+    "InterIoTInst" : "http://inter-iot.eu/instance/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "p1ont" : "http://platform1.eu/sensors#",
+    "p2ont": "http://platform2.eu/sensors#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "InterIoT" : "http://inter-iot.eu/",
+    "sosa" : "http://www.w3.org/ns/sosa/"
+  }
+}
