@@ -269,6 +269,46 @@
         }
       }
     },
+    "/validate": {
+      "post": {
+        "tags": [
+          "Alignments"
+        ],
+        "summary": "Validate alignment in IPSM-AF format",
+        "description": "Validates the structure of an alignment in IPSM-AF format",
+        "consumes": [
+          "application/xml"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "alignment",
+            "description": "Alignment source",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Alignment validated successfuly",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "500": {
+            "description": "Alignment validation failed",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
     "/channels": {
       "get": {
         "tags": [
@@ -563,15 +603,12 @@
         }
       }
     },
-    "Alignment": {
+    "align:Alignment": {
       "type": "object",
-      "xml": {
-        "namespace": "http://www.inter-iot.eu/sripas#"
-      },
       "required": [
         "align:onto1",
         "align:onto2",
-        "steps",
+        "sripas:steps",
         "align:map"
       ],
       "properties": {
@@ -607,9 +644,9 @@
           "type": "string",
           "description": "method of alignment construction e.g. manual"
         },
-        "align:time": {
+        "dcelem:date": {
           "type": "string",
-          "description": "time of alignment creation"
+          "description": "timestamp of an event in the lifecycle of the alignment e.g. creation date (ISO8601 format)"
         },
         "align:onto1": {
           "type": "object",
@@ -659,7 +696,7 @@
           "type": "object",
           "description": "Steps",
           "properties": {
-            "step": {
+            "sripas:step": {
               "type": "object",
               "description": "Alignment step",
               "properties": {

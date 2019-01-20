@@ -42,8 +42,8 @@ lazy val jenaV = "3.9.0"
 
 lazy val commonSettings = Seq(
   name := "ipsm-core",
-  version := "0.8.9",
-  scalaVersion := "2.12.7",
+  version := "0.8.10",
+  scalaVersion := "2.12.8",
   scalacOptions := Seq(
     "-unchecked",
     "-deprecation",
