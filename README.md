@@ -20,3 +20,21 @@ interiot/ipsm-core              1.0.0               fbed3d4938cf        1 minute
 ```
 
 The image is further used for the `IPSM` [dockerized deployment](https://github.com/INTER-IoT/ipsm-docker.git).
+
+## Docker 
+The docker deployment of the Inter-Platform Semantic Mediator (IPSM) uses Docker Compose tool and consists of the following Docker images:
+
+wurstmeister/zookeeper 
+wurstmeister/kafka
+interiot/ipsm-core
+
+## Installation
+For deploying the IPSM using docker, please follow the SIL installation guide:
+ - IPSM standalone: for only deploying the IPSM 
+ - Full SIL installation (IPSM + Inter-MW): for deploying the IPSM with an inter-MW instance
+ 
+## Configuration & Use
+The following documentation support the configuration and use of the IPSM:
+  - SIL configuration & use guide
+  - Alignment creation guide (xml or turtle format)
+  - IPSM API guide
