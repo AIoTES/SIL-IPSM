@@ -24,9 +24,9 @@ The image is further used for the `IPSM` [dockerized deployment](https://github.
 ## Docker 
 The docker deployment of the Inter-Platform Semantic Mediator (IPSM) uses Docker Compose tool and consists of the following Docker images:
 
-wurstmeister/zookeeper 
-wurstmeister/kafka
-interiot/ipsm-core
+- wurstmeister/zookeeper 
+- wurstmeister/kafka
+- interiot/ipsm-core
 
 ## Installation
 For deploying the IPSM using docker, please follow the SIL installation guide:
